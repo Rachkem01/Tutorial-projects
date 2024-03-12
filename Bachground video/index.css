@@ -39,6 +39,7 @@ align-items: center;
     border: 2px solid white;
     padding: 14px 15px;
     margin: 20px;
+    transition: 0.5s;
 }
 
 .content a:hover{
@@ -52,4 +53,18 @@ position: absolute;
     bottom: 0;
     z-index:-1;
     position: fixed;
+}
+
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
