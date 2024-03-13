@@ -1,0 +1,57 @@
+@import url("https://fonts.google.com/specimen/Playfair+Display+SC?query=playfair");
+
+body{
+    height: 100vh;
+    background: #0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.container{
+    text-align: center;
+    margin:  0 auto;
+}
+
+h1{
+    color:white;
+    font-size: 4rem;
+    font-family: Arial;
+
+}
+
+p{
+    color:#ffff;
+    max-width: 700px;
+    font-family: sans-serif;
+    letter-spacing:2px;
+    line-height: 22px;
+    margin-bottom: 40px;
+
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    border: transparent;
+    background: transparent;
+    color:#fff;
+    border: 2px outset white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Javascript */
+div.cursor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:15px;
+    height: 15px;
+    background: yellow;
+    border-radius: 50%;
+    transform: translate(-50%,50%);
+}
