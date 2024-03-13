@@ -1,14 +1,14 @@
 const itemHeaders = document.querySelectorAll(".accordion-item-header");
-const bodyContent =document.querySelector("accordion-item-body-content");
+
 
 
 itemHeaders.forEach((accordion) => {
     accordion.addEventListener("click",collapseAccordions);
     function collapseAccordions(){
-        const activeAccordion = document.querySelector(".active")
+        const activeAccordion = document.querySelector(".accordion-item-body-content")
         if (accordion && activeAccordion !== accordion){
             activeAccordion.classList.toggle("active");
-            activeAccordion.nextElementSibling.maxHeight=0
+            // activeAccordion.nextElementSibling.style.maxHeight = 0
         }
 
         accordion.classList.toggle("active")
@@ -24,3 +24,10 @@ itemHeaders.forEach((accordion) => {
 
 
 })
+
+// const accordion = document.getElementsByClassName(".accordion-item");
+// for (i=0; i < accordion.length; i++){
+//     accordion[i].addEventListener("click",function(){
+//         this.classList.toggle('active')
+//     })
+// }

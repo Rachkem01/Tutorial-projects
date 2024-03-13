@@ -51,9 +51,11 @@ body{
 }
 
 .accordion-item-body{
+    position: relative;
     max-height: 0;
-    overflow: hidden;
+    overflow:hidden;
     transition: (0.3s, ease-out);
+    overflow-y: auto;
 
 }
 
@@ -103,9 +105,11 @@ body{
 } 
 
 /* Javascript */
-.accordion-item-header.active > .icon:before{
-    transform: rotate(180deg);
 
+
+
+.accordion-item-header.active > .icon:after{
+    transform: rotate(180deg);
 }
 
 .accordion-item-header.active > .icon:after{
@@ -113,6 +117,10 @@ body{
 
 }
 
+.accordion-item-body.active .content{
+    height: 150px;
+    padding: 10px;
+}
 .divider{
     width: 100%;
     height: 1px;
