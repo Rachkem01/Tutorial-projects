@@ -6,7 +6,7 @@ let scrollTop = document.documentElement.scrollTop;
 let scrolled = (scrollTop / scrollHeight) * 100;
 
 
-window.addEventListener("scroll",  e => {
+window.addEventListener("scroll",  (event) => {
     
     indicator.style.width = `'${scrolled}%'`
 }

@@ -40,4 +40,5 @@ h1{
     border-radius: 3px;
     transition: width 0.1s;
     background: linear-gradient(30deg,#13F0F2,#E42DE6);
+    visibility: visible;
 }
