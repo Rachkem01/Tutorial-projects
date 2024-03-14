@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-size: 1 rem;
+    font-family: Verdana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.heading{
+    font-size: 10rem;
+    font-weight: 900;
+    background-image: url(https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
