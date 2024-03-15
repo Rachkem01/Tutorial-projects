@@ -2,14 +2,22 @@ let indicator= document.querySelector(".scroll-indicator .progress");
 
 let scrollHeight = document.documentElement.scrollHeight -document.documentElement.clientHeight;
 
-let scrollTop = document.documentElement.scrollTop;
-let scrolled = (scrollTop / scrollHeight) * 100;
+window.addEventListener('scroll',scroll)
 
-
-window.addEventListener("scroll",  (event) => {
-    
-    indicator.style.width = `'${scrolled}%'`
+function scroll(){
+    let scrollTop =document.documentElement.scrollTop;
+    let scrolled = (scrollTop / scrollHeight) * 100
+    indicator.style.width =`${scrolled}%`
 }
 
-);
+// let scrollTop = document.documentElement.scrollTop;
+// let scrolled = (scrollTop / scrollHeight) * 100;
+
+
+// window.addEventListener("scroll",  (event) => {
+    
+//     indicator.style.width = `'${scrolled}%'`
+// }
+
+// );
 
