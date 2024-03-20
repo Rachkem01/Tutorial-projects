@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(5,5,5);
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+
+}
+
+.bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.image-1{
+    background: url(dark\ siders2.jpg);
+}
+
+.image-2{
+background: url(Assasin\ creed.jpg);
+}
+
+.image-3{
+    background: url(dishonored.png);
+    }
+
+.image-4{
+        background: url(watch\ dogs.jpg);
+        }
+
+        .image-5{
+            background: url(call\ of\ duty.jpg);
+            }
+
+.slide{
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    border-radius: 50px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 700ms ease-in;
+}
+
+h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    font-size: 24px;
+}
+
+@media  (max-width:480px) {
+    .slide:nth-of-type(4),
+    .slide:nth-of-type(5) {
+display: none;
+    }
+}
+
+/* 
+javascript */
+.slide.active{
+    flex: 5;
+}
+
+.slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3 ease 0.4s;
+}
