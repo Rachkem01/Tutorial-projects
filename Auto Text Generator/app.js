@@ -12,13 +12,13 @@ let index = 0;
 let charIndex = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (words.length ===true){
+    if (words.length){
         setTimeout(type, newLetterDelay)
     }
-})
+});
 
 function type(){
-    if(charIndex < words[index].length){
+    if(charIndex < words[index].length) {
         typedTextSpan.textContent += words[index].charAt(charIndex);
         charIndex ++;
         setTimeout(type,typingDelay)
@@ -29,7 +29,7 @@ function type(){
 
 
 function erase(){
-    if(charIndex > 0){
+    if (charIndex > 0){
         typedTextSpan.textContent =words[index].substring(0, charIndex -1)
         charIndex --;
         setTimeout(erase,erasingDelay)
@@ -39,6 +39,8 @@ function erase(){
         if(index >= words.length){
             index=0;
         }
-        setTimeout(type,typingDelay +1100);
+        setTimeout(type, typingDelay + 1100);
     }
 }
+
+console.log(typedTextSpan)
