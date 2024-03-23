@@ -13,7 +13,7 @@ body{
     perspective: 100px; 
      overflow: hidden;
     position: relative;
-    background:black;
+    background:transparent;
 }
 
 .navbar{
@@ -114,6 +114,6 @@ body{
         pointer-events: all;
     }
 
-    .page.home{
+    .page .home{
         background-image: url(pwc2.jpg);
     }

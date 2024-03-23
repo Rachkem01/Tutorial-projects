@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    height: 200px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    outline: none;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: crimson;
+    width: 150px;
+    cursor: pointer;
+}
+.background-image{
+    background-image: url(Assasin\ creed.jpg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    right: -20px;
+    left: -20px;
+    z-index: -1;
+    filter: blur(20px);
+    
+}
